@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+
+<body>
+  <div class="main">
+    <div class="home">
+
+      <!-- Navbar -->
+
+      <div class="navbar">
+        <a href="index.html" class="nav-logo">
+          <img src="images/Logo.png" alt="Logo" />
+        </a>
+        <div class="nav-menu">
+          <a href="index.html" class="nav-item">
+            <p class="p-large text-gray">Home</p>
+          </a>
+          <a href="index.html" class="nav-item">
+            <p class="p-large text-gray">Movies</p>
+          </a>
+
+          <a href="index.html" class="nav-item">
+            <p class="p-large text-gray">Subscriptions</p>
+          </a>
+
+          <a href="index.html" class="nav-item">
+            <p class="p-large text-gray">Support</p>
+          </a>
+        </div>
+        <a href="SignIn.html">
+          <button class="primary-btn">Get Started</button>
+        </a>
+
+        <div class="hamburger-menu" onclick="toggleSidebar()">
+          <i class="fas fa-bars hamburgerIcon"></i>
+        </div>
+      </div>
+
+      <div class="sidebar" id="sidebar" style="display: none">
+        <div class="sidebar-close" onclick="toggleSidebar()">
+          <i class="fas fa-times CloseIcon"></i>
+        </div>
+        <div class="sidebar-menu">
+          <a href="index.html" class="nav-item">
+            <p class="p-large text-gray">Home</p>
+          </a>
+
+          <a href="index.html" class="nav-item">
+            <p class="p-large text-gray">Movies</p>
+          </a>
+
+          <a href="index.html" class="nav-item">
+            <p class="p-large text-gray">Subscriptions</p>
+          </a>
+
+          <a href="index.html" class="nav-item">
+            <p class="p-large text-gray">Support</p>
+          </a>
+          <a href="SignIn.html" >
+            <button class="primary-btn">Get Started</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Movie Thumbnail -->
+
+      <div class="movietb-container">
+        <div class="movietb-img">
+          <div class="movietb-overlay"></div>
+          <img src="images/Posters/Thumbnail/Oppenheimer.jpeg" alt="">
+          <div class="movietb-content" id="movieContent">
+            <div class="movietb-content-info">
+              <h3>Oppenheimer</h3>
+              <h6 class="text-gray">
+                Oppenheimer follows the life of J. Robert Oppenheimer, the American theoretical physicist who helped
+                develop the first nuclear weapons during World War II.
+              </h6>
+            </div>
+            <div class="movietb-btn-grp">
+              <div class="primary-btn" id="playNowBtn">
+                <img src="images/Icons/Play Icon.svg" alt="" />
+                <span>Watch Trailer</span>
+              </div>
+              <div class="movietb-sm-btn-grp" id="addBtn">
+                <div class="social-media-icon">
+                  <img src="images/Icons/Add Icon.svg" alt="" />
+                </div>
+                <div class="social-media-icon" id="likeBtn">
+                  <img src="images/Icons/Like Icon.svg" alt="" />
+                </div>
+                <div class="social-media-icon" id="soundBtn">
+                  <img src="images/Icons/Sound Icon.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Trailer iframe -->
+
+        <iframe id="trailerFrame" src="https://www.youtube.com/embed/uYPbbksJxIg?autoplay=1&controls=1" frameborder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen style="display: none; width: 100%; height: 100%; border-radius: 12px;"></iframe>
+
+      </div>
+
+
+
+      <!-- Movie Description -->
+      <div class="movie-description">
+        <div class="movie-info-left">
+          <div class="movie-info">
+            <h6 class="text-gray">Description</h6>
+            <h6>
+              Written and directed by Christopher Nolan, Oppenheimer is an
+              IMAX®-shot epic thriller that thrusts audiences into the
+              pulse-pounding paradox of the enigmatic man who must risk
+              destroying the world in order to save it. The film stars Cillian
+              Murphy as J. Robert Oppenheimer and Emily Blunt as his wife,
+              biologist and botanist Katherine "Kitty" Oppenheimer.
+            </h6>
+          </div>
+          <div class="movie-info">
+            <h6 class="text-gray">Cast</h6>
+            <div class="cast-images">
+              <div class="cast-image">
+                <img src="images/Cast/Kantara/Rishb Shetty.jpeg" alt="" />
+              </div>
+              <div class="cast-image">
+                <img src="images/Cast/Kantara/sapthami.jpeg" alt="" />
+              </div>
+              <div class="cast-image">
+                <img src="images/Cast/Kantara/manasi.jpeg" alt="" />
+              </div>
+              <div class="cast-image">
+                <img src="images/Cast/Kantara/kishore.jpeg" alt="" />
+              </div>
+              <div class="cast-image">
+                <img src="images/Cast/Kantara/Vinay.jpg" alt="" />
+              </div>
+              <div class="cast-image">
+                <img src="images/Cast/Kantara/Prakash.jpg" alt="" />
+              </div>
+              <div class="cast-image">
+                <img src="images/Cast/Kantara/pramod.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h6 class="text-gray">Reviews</h6>
+            <div class="movie-reviews">
+              <div class="movie-review-card">
+                <div class="review-info">
+                  <div class="reviewer-details">
+                    <h5>Aniket Roy</h5>
+                    <h6 class="text-gray">From India</h6>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/4.5 Rating Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+                <h6 class="text-gray">
+                  This movie was recommended to me by a very dear friend who
+                  went for the movie by herself. I went to the cinemas to watch
+                  but had a houseful board so couldn’t watch it.
+                </h6>
+              </div>
+
+              <div class="movie-review-card">
+                <div class="review-info">
+                  <div class="reviewer-details">
+                    <h5>Aniket Roy</h5>
+                    <h6 class="text-gray">From India</h6>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/4.5 Rating Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+                <h6 class="text-gray">
+                  This movie was recommended to me by a very dear friend who
+                  went for the movie by herself. I went to the cinemas to watch
+                  but had a houseful board so couldn’t watch it.
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="movie-info2">
+          <div class="movie-info-content">
+            <div class="movie-info-content-header">
+              <img src="images/Icons/Date Icon.svg" alt="" />
+              <h6 class="text-gray">Released Year</h6>
+            </div>
+            <h6>2023</h6>
+          </div>
+          <div class="movie-info-content">
+            <div class="movie-info-content-header">
+              <img src="images/Icons/Language Icon.svg" alt="" />
+              <h6 class="text-gray">Available Languages</h6>
+            </div>
+            <div class="movie-info-langauge-container">
+              <div class="mi-lan-content">
+                <h6>Hindi</h6>
+              </div>
+              <div class="mi-lan-content">
+                <h6>English</h6>
+              </div>
+              <div class="mi-lan-content">
+                <h6>Tamil</h6>
+              </div>
+              <div class="mi-lan-content">
+                <h6>Telugu</h6>
+              </div>
+              <div class="mi-lan-content">
+                <h6>Kannada</h6>
+              </div>
+            </div>
+          </div>
+          <div class="movie-info-content">
+            <div class="movie-info-content-header">
+              <img src="images/Icons/Star Icon.svg" alt="" />
+              <h6 class="text-gray">Ratings</h6>
+            </div>
+            <div class="mi-rating-grp">
+              <div class="mi-rating">
+                <h6>IMDb</h6>
+                <div class="mi-rating-info">
+                  <img src="images/Icons/4.5 Rating Icon.svg" alt="">
+                  <p class="p-large">4.5</p>
+                </div>
+              </div>
+              <div class="mi-rating">
+                <h6>Netflix</h6>
+                <div class="mi-rating-info">
+                  <img src="images/Icons/4.5 Rating Icon.svg" alt="">
+                  <p class="p-large">4.5</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="movie-info-content">
+            <div class="movie-info-content-header">
+              <img src="images/Icons/Genre Icon.svg" alt="" />
+              <h6 class="text-gray">Genre</h6>
+            </div>
+            <div class="movie-info-langauge-container">
+              <div class="mi-lan-content">
+                <h6>Fiction</h6>
+              </div>
+              <div class="mi-lan-content">
+                <h6>Drama</h6>
+              </div>
+            </div>
+          </div>
+          <div class="movie-info-content">
+            <h6 class="text-gray">Director</h6>
+            <div class="cast-lan-content">
+              <div class="main-director-img">
+                <img src="images/Cast/Kantara/Rishb Shetty.jpeg" alt="">
+              </div>
+              <div class="cast-info">
+                <h6>Christopher Nolan</h6>
+                <p class="p-large text-gray">British-American filmmaker</p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-info-content">
+            <h6 class="text-gray">Music</h6>
+            <div class="cast-lan-content">
+              <div class="main-director-img">
+                <img src="images/Cast/Kantara/Rishb Shetty.jpeg" alt="">
+              </div>
+              <div class="cast-info">
+                <h6>Christopher Nolan</h6>
+                <p class="p-large text-gray">British-American filmmaker</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer-container"></div>
+    </div>
+  </div>
+
+  <script>
+
+    // Navbar
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      if (sidebar.style.display === "none" || sidebar.style.display === "") {
+        sidebar.style.display = "block";
+      } else {
+        sidebar.style.display = "none";
+      }
+    }
+
+    // Footer
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+
+    // Movie
+
+    document.getElementById('playNowBtn').addEventListener('click', function () {
+      document.getElementById('movieContent').style.display = 'none';
+      document.querySelector('.movietb-img img').style.display = 'none';
+      document.querySelector('.movietb-overlay').style.display = 'none';
+
+      var trailerFrame = document.getElementById('trailerFrame');
+      trailerFrame.style.display = 'block';
+      trailerFrame.src = "https://www.youtube.com/embed/uYPbbksJxIg?controls=1";
+    });
+
+
+  </script>
+</body>
+
+</html>

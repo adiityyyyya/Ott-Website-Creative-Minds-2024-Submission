@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="icon" href="images/4375011_logo_netflix_icon.png" />
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="home">
+      <!-- Navbar -->
+
+      <div class="navbar">
+        <a href="index.html" class="nav-logo">
+          <img src="images/Logo.png" alt="Logo" />
+        </a>
+        <div class="nav-menu">
+          <a href="index.html" class="nav-item-active">
+            <p class="p-large">Home</p>
+          </a>
+          <a href="#movies" class="nav-item">
+            <p class="p-large text-gray">Movies</p>
+          </a>
+
+          <a href="#Subscriptions" class="nav-item">
+            <p class="p-large text-gray">Subscriptions</p>
+          </a>
+
+          <a href="#Support" class="nav-item">
+            <p class="p-large text-gray">Support</p>
+          </a>
+        </div>
+        <a href="SignIn.html">
+          <button class="primary-btn">Get Started</button>
+        </a>
+
+        <div class="hamburger-menu" onclick="toggleSidebar()">
+          <i class="fas fa-bars hamburgerIcon"></i>
+        </div>
+      </div>
+
+      <div class="sidebar" id="sidebar" style="display: none">
+        <div class="sidebar-close" onclick="toggleSidebar()">
+          <i class="fas fa-times CloseIcon"></i>
+        </div>
+        <div class="sidebar-menu">
+          <a href="index.html" class="nav-item-active">
+            <p class="p-large">Home</p>
+          </a>
+
+          <a href="#movies" class="nav-item">
+            <p class="p-large text-gray">Movies</p>
+          </a>
+
+          <a href="#Subscriptions" class="nav-item">
+            <p class="p-large text-gray">Subscriptions</p>
+          </a>
+
+          <a href="#Support" class="nav-item">
+            <p class="p-large text-gray">Support</p>
+          </a>
+          <a href="SignIn.html">
+            <button class="primary-btn">Get Started</button>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <div class="hero-section">
+        <!-- Background Sliders -->
+
+        <!-- Top Overlay -->
+        <div class="hero-overlay2"></div>
+
+        <!-- Bottom Overlay -->
+        <div class="hero-overlay"></div>
+
+        <div class="hero-slider">
+          <div class="slider-track">
+            <!-- Slides for the first track -->
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Action/Eagle.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Action/Fighter.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Action/The Monkey Man.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Action/Yodha.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Aquaman.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Captain Miller.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Dune.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Kraven.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Comedy/Avesham.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Comedy/Crew.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Comedy/Madgaon.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Comedy/Murder.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Article 370.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Merry Christmas.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Ruslan.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Srikanth.jpg" alt="" />
+            </div>
+
+            
+
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Action/Avatar.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Action/Echo.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Action/RAM.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Action/Shazam.jpeg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Comedy/Mr mrs smith.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Comedy/Role pLay.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Comedy/Sticky.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Comedy/Ted.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Action/Eagle.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Action/Fighter.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Action/The Monkey Man.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Action/Yodha.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Aquaman.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Captain Miller.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Dune.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Kraven.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Comedy/Avesham.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Comedy/Crew.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Comedy/Madgaon.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Comedy/Murder.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Article 370.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Merry Christmas.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Ruslan.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Srikanth.jpg" alt="" />
+            </div>
+          </div>
+
+        
+
+          <div class="slider-track">
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Horror/Bhakshak.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Horror/Munjya.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Horror/Shaitan.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Horror/Stopmotion.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Barbie.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Fight Club.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Mission Impossible.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Oppenheimer.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Captain Miller.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Fall Guy.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Hanuman.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Indian.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Wakanda.jpeg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Article 370.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Merry Christmas.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Ruslan.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Shows/Must Watch/Avatar.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Must Watch/Farzi.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Must Watch/IF.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Must Watch/Night Manager.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Drama/Parasite.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Drama/Passenger.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Drama/Showtime.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Drama/The regime.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Horror/Bhakshak.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Horror/Munjya.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Horror/Shaitan.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Horror/Stopmotion.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Barbie.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Fight Club.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Mission Impossible.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Oppenheimer.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Captain Miller.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Fall Guy.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Hanuman.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Indian.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Wakanda.jpeg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Article 370.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Merry Christmas.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Ruslan.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="slider-track">
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Captain Miller.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Fall Guy.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Hanuman.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Indian.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Wakanda.jpeg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Article 370.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Merry Christmas.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Ruslan.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Srikanth.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Fight Club.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Mission Impossible.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Oppenheimer.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Aquaman.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Captain Miller.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Dune.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Kraven.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Shows/Trending/Accused.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Trending/Choona.jpg Miller.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Trending/GEN V.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Trending/Jubile.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Shows/Trending/SILO.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Shows/Genre/Horror/Tarot.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Horror/Munjya.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Horror/Stopmotion.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Captain Miller.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Fall Guy.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Hanuman.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Indian.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Trending/Wakanda.jpeg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Article 370.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Merry Christmas.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Ruslan.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Drama/Srikanth.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Fight Club.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Mission Impossible.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Must Watch/Oppenheimer.jpg" alt="" />
+            </div>
+
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Aquaman.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Captain Miller.jpeg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Dune.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Posters/Movies/Genres/Adventure/Kraven.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-section-content">
+          <div class="hero-section-title">
+            <h2>Unlimited movies, TV shows & more</h2>
+            <h5 class="text-gray">
+              Watch anywhere. Cancel anytime. Ready to watch?<br />Enter your
+              email to create or restart your membership.
+            </h5>
+          </div>
+          <a href="SignIn.html" class="primary-btn">
+            <i class="fas fa-circle-play"></i> Start Watching Now
+          </a>
+        </div>
+      </div>
+
+      <!-- Movies Section -->
+
+      <div class="movie-show" id="movies">
+      
+        <div class="ms-container">
+          <!-- Genres -->
+          <div class="ms-sub-container">
+            <div class="ms-header">
+              <h4>Our Genres</h4>
+              <div class="pn-container">
+                <button class="arrow-btn">
+                  <img src="images/Icons/Left arrow Icon.svg" alt="" />
+                </button>
+                <img src="images/Icons/Slider Icon.svg" alt="" />
+                <button class="arrow-btn">
+                  <img src="images/Icons/Arrow Icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+
+            <div class="ms-slider">
+              <div class="ms-genre-card">
+                <div class="ms-genre-card-gradient"></div>
+                <div class="card-title-and-arrow">
+                  <h5>Action</h5>
+                  <img src="images/Icons/Arrow Icon.svg" alt="" />
+                </div>
+                <div class="ms-genre-card-img">
+                  <img src="images/Posters/Movies/Genres/Action/The Monkey Man.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Action/Eagle.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Action/Fighter.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Action/Yodha.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="ms-genre-card">
+                <div class="ms-genre-card-gradient"></div>
+                <div class="card-title-and-arrow">
+                  <h5>Adventure</h5>
+                  <img src="images/Icons/Arrow Icon.svg" alt="" />
+                </div>
+                <div class="ms-genre-card-img">
+                  <img src="images/Posters/Movies/Genres/Adventure/Aquaman.jpeg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Adventure/Captain Miller.jpeg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Adventure/Dune.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Adventure/Kraven.jpg" alt="" />
+                </div>
+              </div>
+              <div class="ms-genre-card">
+                <div class="ms-genre-card-gradient"></div>
+                <div class="card-title-and-arrow">
+                  <h5>Comedy</h5>
+                  <img src="images/Icons/Arrow Icon.svg" alt="" />
+                </div>
+                <div class="ms-genre-card-img">
+                  <img src="images/Posters/Movies/Genres/Comedy/Avesham.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Comedy/Crew.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Comedy/Madgaon.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Comedy/Murder.jpg" alt="" />
+                </div>
+              </div>
+              <div class="ms-genre-card">
+                <div class="ms-genre-card-gradient"></div>
+                <div class="card-title-and-arrow">
+                  <h5>Drama</h5>
+                  <img src="images/Icons/Arrow Icon.svg" alt="" />
+                </div>
+                <div class="ms-genre-card-img">
+                  <img src="images/Posters/Movies/Genres/Drama/Article 370.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Drama/Merry Christmas.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Drama/Ruslan.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Drama/Srikanth.jpg" alt="" />
+                </div>
+              </div>
+              <div class="ms-genre-card">
+                <div class="ms-genre-card-gradient"></div>
+                <div class="card-title-and-arrow">
+                  <h5>Horror</h5>
+                  <img src="images/Icons/Arrow Icon.svg" alt="" />
+                </div>
+                <div class="ms-genre-card-img">
+                  <img src="images/Posters/Movies/Genres/Horror/Bhakshak.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Horror/Munjya.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Horror/Shaitan.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Horror/Stopmotion.jpg" alt="" />
+                </div>
+              </div>
+              <div class="ms-genre-card">
+                <div class="ms-genre-card-gradient"></div>
+                <div class="card-title-and-arrow">
+                  <h5>Fiction</h5>
+                  <img src="images/Icons/Arrow Icon.svg" alt="" />
+                </div>
+                <div class="ms-genre-card-img">
+                  <img src="images/Posters/Movies/Genres/Fiction/atlas.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Fiction/oblivion.jpeg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Fiction/spacemen.jpeg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Fiction/tenet.jpg" alt="" />
+                </div>
+              </div>
+              <div class="ms-genre-card">
+                <div class="ms-genre-card-gradient"></div>
+                <div class="card-title-and-arrow">
+                  <h5>Romance</h5>
+                  <img src="images/Icons/Arrow Icon.svg" alt="" />
+                </div>
+                <div class="ms-genre-card-img">
+                  <img src="images/Posters/Movies/Genres/Romance/dear.jpeg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Romance/haseena.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Romance/kho gaye.jpeg" alt="" />
+                  <img src="images/Posters/Movies/Genres/Romance/thenotebook.jpg" alt="" />
+                </div>
+              </div>
+              <div class="ms-genre-card">
+                <div class="ms-genre-card-gradient"></div>
+                <div class="card-title-and-arrow">
+                  <h5>Crime</h5>
+                  <img src="images/Icons/Arrow Icon.svg" alt="" />
+                </div>
+                <div class="ms-genre-card-img">
+                  <img src="images/Posters/Movies/Genres/crime/badla.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/crime/hit.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/crime/janejan.jpg" alt="" />
+                  <img src="images/Posters/Movies/Genres/crime/murdermubarak.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Trending Movie Section--> 
+
+          <div class="ms-sub-container">
+            <div class="ms-header">
+              <h4>Trending Now</h4>
+              <div class="pn-container">
+                <button class="arrow-btn" aria-label="Previous">
+                  <img src="images/Icons/Left arrow Icon.svg" alt="Previous" />
+                </button>
+                <img src="images/Icons/Slider Icon.svg" alt="" />
+                <button class="arrow-btn" aria-label="Next">
+                  <img src="images/Icons/Arrow Icon.svg" alt="Next" />
+                </button>
+              </div>
+            </div>
+            <div class="ms-slider">
+              <div class="ms-trending-card">
+                <div class="ms-trending-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/Views Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-trending-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Movies/Trending/Captain Miller.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="ms-trending-card">
+                <div class="ms-trending-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/Views Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-trending-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Movies/Trending/Fall Guy.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="ms-trending-card">
+                <div class="ms-trending-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/Views Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-trending-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Movies/Trending/Hanuman.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="ms-trending-card">
+                <div class="ms-trending-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/Views Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-trending-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Trending/SILO.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="ms-trending-card">
+                <div class="ms-trending-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/Views Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-trending-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Movies/Trending/Indian.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="ms-trending-card">
+                <div class="ms-trending-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/Views Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-trending-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Trending/emilyinparis.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="ms-trending-card">
+                <div class="ms-trending-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/Views Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-trending-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Trending/The Great Indian Kapil Show..jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="ms-trending-card">
+                <div class="ms-trending-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/Views Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-trending-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Movies/Trending/shadowbone.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="ms-trending-card">
+                <div class="ms-trending-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/Views Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-trending-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Trending/Accused.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="ms-trending-card">
+                <div class="ms-trending-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/Views Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-trending-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Trending/Choona.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="ms-trending-card">
+                <div class="ms-trending-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/Views Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-trending-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Trending/lovenextdoor.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Must-Watch Movies Section -->
+
+          <div class="ms-sub-container">
+            <div class="ms-header">
+              <h4>Must Watch</h4>
+              <div class="pn-container">
+                <button class="arrow-btn">
+                  <img src="images/Icons/Left arrow Icon.svg" alt="" />
+                </button>
+                <img src="images/Icons/Slider Icon.svg" alt="" />
+                <button class="arrow-btn">
+                  <img src="images/Icons/Arrow Icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="ms-slider">
+              <div class="ms-mw-card">
+                <div class="ms-mw-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/4.5 Rating Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+
+                <div class="ms-mw-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Movies/Must Watch/Oppenheimer.jpg" alt="" />
+                  </a>
+                </div>
+
+              </div>
+
+              <div class="ms-mw-card">
+                <div class="ms-mw-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/4.5 Rating Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-mw-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Movies/Must Watch/Fight Club.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="ms-mw-card">
+                <div class="ms-mw-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/4.5 Rating Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-mw-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Movies/Must Watch/Mission Impossible.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="ms-mw-card">
+                <div class="ms-mw-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/4.5 Rating Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-mw-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Must Watch/IF.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="ms-mw-card">
+                <div class="ms-mw-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/4.5 Rating Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-mw-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Must Watch/delhicrime.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="ms-mw-card">
+                <div class="ms-mw-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/4.5 Rating Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-mw-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Genre/Horror/Abigali.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="ms-mw-card">
+                <div class="ms-mw-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/4.5 Rating Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-mw-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Must Watch/ghoul.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="ms-mw-card">
+                <div class="ms-mw-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/4.5 Rating Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-mw-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Genre/Romance/mismatched.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="ms-mw-card">
+                <div class="ms-mw-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/4.5 Rating Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-mw-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Genre/Fiction/scoop.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+
+              <div class="ms-mw-card">
+                <div class="ms-mw-card-content">
+                  <div class="info-container">
+                    <img src="images/Icons/Time Icon.svg" alt="" />
+                    <p class="p-medium">1hr 30min</p>
+                  </div>
+
+                  <div class="info-container">
+                    <img src="images/Icons/4.5 Rating Icon.svg" alt="" />
+                    <p class="p-medium">2K</p>
+                  </div>
+                </div>
+
+                <div class="ms-mw-card-img">
+                  <a href="./movie.html">
+                    <img src="images/Posters/Shows/Must Watch/Night Manager.jpg" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features Section -->
+
+      <div class="features">
+        <div class="cta-content">
+          <h3>Experience across various devices</h3>
+          <h6 class="text-gray">
+            Enjoy your favorite movies and TV shows anytime, anywhere.
+          </h6>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-title">
+              <div class="feature-icon">
+                <img src="images/Icons/Smartphone Icon.svg" alt="Smartphone Icon" />
+              </div>
+              <h4>Smartphones</h4>
+            </div>
+            <h6 class="text-gray">
+              Netflix is optimized for both Android and iOS smartphones.
+              Download our app from the Google Play Store or the Apple App
+              Store.
+            </h6>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-title">
+              <div class="feature-icon">
+                <img src="images/Icons/Tablet Icon.svg" alt="Smartphone Icon" />
+              </div>
+              <h4>Tablets</h4>
+            </div>
+            <h6 class="text-gray">
+              Netflix is optimized for tablets, ensuring a smooth and
+              immersive viewing experience.
+            </h6>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-title">
+              <div class="feature-icon">
+                <img src="images/Icons/Laptop Icon.svg" alt="Smartphone Icon" />
+              </div>
+              <h4>Laptops</h4>
+            </div>
+            <h6 class="text-gray">
+              Enjoy high-definition streaming on your laptop. Simply visit our
+              website and start watching.
+            </h6>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-title">
+              <div class="feature-icon">
+                <img src="images/Icons/TV Icon.svg" alt="Smartphone Icon" />
+              </div>
+              <h4>Smart TV</h4>
+            </div>
+            <h6 class="text-gray">
+              Netflix is compatible with Smart TVs. Download our app and
+              enjoy a cinematic experience at home.
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing Section -->
+
+      <div class="pricing" id="Subscriptions">
+        <div class="pricing-header">
+          <div class="cta-content">
+            <h3>Choose the right plan</h3>
+            <h6 class="text-gray">
+              Join Netflix and select from our flexible subscription options.
+            </h6>
+          </div>
+          <div class="toggle">
+            <label class="toggle-switch">
+              <input type="checkbox" id="pricing-toggle" onchange="togglePricing()" />
+              <span class="switch-slider"></span>
+              <span class="p-large switch-label monthly">Monthly</span>
+              <span class="p-large switch-label yearly">Yearly</span>
+            </label>
+          </div>
+        </div>
+        <div class="pts">
+          <div class="pt">
+            <div class="pt-header">
+              <h5 class="text-gray">Basic</h5>
+              <div class="pt-header-content">
+                <h3 id="basic-price">₹199</h3>
+                <h6 class="text-gray" id="basic-duration">/month</h6>
+              </div>
+            </div>
+            <div class="pt-content">
+              <h6>What you'll get</h6>
+              <div class="pt-features">
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">720p (HD) Resolution</div>
+                </div>
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">
+                    TV, computer, mobile phone, tablet
+                  </div>
+                </div>
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">
+                    Devices can watch at the same time 1
+                  </div>
+                </div>
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">Download devices 1</div>
+                </div>
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">Reporting and analytics</div>
+                </div>
+              </div>
+            </div>
+            <a href="SignIn.html">
+              <div class="secondary-btn">Start Watching Now</div>
+            </a>
+          </div>
+
+          <div class="pt2">
+            <div class="pt-header">
+              <h5 class="text-gray">Standard</h5>
+              <div class="pt-header-content">
+                <h3 id="standard-price">₹299</h3>
+                <h6 class="text-gray" id="standard-duration">/month</h6>
+              </div>
+            </div>
+            <div class="pt-content">
+              <h6>What you'll get</h6>
+              <div class="pt-features">
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">720p (HD) Resolution</div>
+                </div>
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">
+                    TV, computer, mobile phone, tablet
+                  </div>
+                </div>
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">
+                    Devices can watch at the same time 1
+                  </div>
+                </div>
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">Download devices 1</div>
+                </div>
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">Reporting and analytics</div>
+                </div>
+              </div>
+            </div>
+            <a href="SignIn.html">
+              <div class="primary-btn">Start Watching Now</div>
+            </a>
+          </div>
+
+          <div class="pt">
+            <div class="pt-header">
+              <h5 class="text-gray">Premium</h5>
+              <div class="pt-header-content">
+                <h3 id="premium-price">₹399</h3>
+                <h6 class="text-gray" id="premium-duration">/month</h6>
+              </div>
+            </div>
+            <div class="pt-content">
+              <h6>What you'll get</h6>
+              <div class="pt-features">
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">720p (HD) Resolution</div>
+                </div>
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">
+                    TV, computer, mobile phone, tablet
+                  </div>
+                </div>
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">
+                    Devices can watch at the same time 1
+                  </div>
+                </div>
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">Download devices 1</div>
+                </div>
+                <div class="pt-feature text-gray">
+                  <img src="images/Icons/Check Icon.svg" alt="" />
+                  <div class="p-large text-gray">Reporting and analytics</div>
+                </div>
+              </div>
+            </div>
+            <a href="SignIn.html">
+              <div class="secondary-btn">Start Watching Now</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+
+      <div class="faq-container" id="Support">
+        <div class="faq-header">
+          <div class="cta-content">
+            <h3>FAQs</h3>
+            <h6 class="text-gray">Got questions? We've got answers!</h6>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq">
+            <button class="faq-question" aria-expanded="false" onclick="toggleFAQ(0)">
+              <div class="faq-no">
+                <h6>01</h6>
+              </div>
+              <div class="faq-main">
+                <h6>What is Netflix?</h6>
+                <div class="faq-answer" id="faq-answer-0">
+                  <div class="p-large text-gray">
+                    Netflix is a streaming service that offers a wide variety of
+                    award-winning TV shows, movies, anime, documentaries, and
+                    more – on thousands of internet-connected devices.
+                  </div>
+                </div>
+              </div>
+              <svg class="faq-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"></rect>
+                <rect y="7" width="16" height="2" rx="1" class="rotate-90"></rect>
+              </svg>
+            </button>
+          </div>
+
+          <div class="faq">
+            <button class="faq-question" aria-expanded="false" onclick="toggleFAQ(1)">
+              <div class="faq-no">
+                <h6>02</h6>
+              </div>
+              <div class="faq-main">
+                <h6>How much does Netflix cost?</h6>
+                <div class="faq-answer" id="faq-answer-1">
+                  <div class="p-large text-gray">
+                    Watch Netflix on your smartphone, tablet, Smart TV, laptop,
+                    or streaming device, all for one fixed monthly fee. Plans
+                    range from ₹149 to ₹649 a month. No extra costs, no
+                    contracts.
+                  </div>
+                </div>
+              </div>
+              <svg class="faq-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"></rect>
+                <rect y="7" width="16" height="2" rx="1" class="rotate-90"></rect>
+              </svg>
+            </button>
+          </div>
+
+          <div class="faq">
+            <button class="faq-question" aria-expanded="false" onclick="toggleFAQ(2)">
+              <div class="faq-no">
+                <h6>03</h6>
+              </div>
+              <div class="faq-main">
+                <h6>What can I watch on Netflix?</h6>
+                <div class="faq-answer" id="faq-answer-2">
+                  <div class="p-large text-gray">
+                    Netflix has an extensive library of feature films,
+                    documentaries, TV shows, anime, award-winning Netflix
+                    originals, and more. Watch as much as you want, anytime you
+                    want.
+                  </div>
+                </div>
+              </div>
+              <svg class="faq-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"></rect>
+                <rect y="7" width="16" height="2" rx="1" class="rotate-90"></rect>
+              </svg>
+            </button>
+          </div>
+
+          <div class="faq">
+            <button class="faq-question" aria-expanded="false" onclick="toggleFAQ(3)">
+              <div class="faq-no">
+                <h6>04</h6>
+              </div>
+              <div class="faq-main">
+                <h6>How do I cancel?</h6>
+                <div class="faq-answer" id="faq-answer-3">
+                  <div class="p-large text-gray">
+                    Netflix is flexible. There are no annoying contracts and no
+                    commitments. You can easily cancel your account online in
+                    two clicks. There are no cancellation fees – start or stop
+                    your account anytime.
+                  </div>
+                </div>
+              </div>
+              <svg class="faq-icon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <rect y="7" width="16" height="2" rx="1"></rect>
+                <rect y="7" width="16" height="2" rx="1" class="rotate-90"></rect>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action (Cta) Banner -->
+
+      <div class="cta">
+        <div class="cta-content">
+          <h3>Start your free trial today!</h3>
+          <h6 class="text-gray">
+            This is a clear and concise call to action that encourages users to
+            sign up for a free trial of Netflix.
+          </h6>
+        </div>
+        <a href="SignIn.html">
+          <button class="primary-btn">Start Free Trial</button>
+        </a>
+      </div>
+
+      <!-- Footer -->
+      <div id="footer-container"></div>
+    </div>
+  </div>
+
+  <script>
+
+    // Navbar
+    
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      if (sidebar.style.display === "none" || sidebar.style.display === "") {
+        sidebar.style.display = "block";
+      } else {
+        sidebar.style.display = "none";
+      }
+    }
+
+    // Pricing
+
+    function togglePricing() {
+      const isYearly = document.getElementById("pricing-toggle").checked;
+      document.getElementById("basic-price").innerText = isYearly
+        ? "₹999"
+        : "₹199";
+      document.getElementById("basic-duration").innerText = isYearly
+        ? "/year"
+        : "/month";
+
+      document.getElementById("standard-price").innerText = isYearly
+        ? "₹1999"
+        : "₹299";
+      document.getElementById("standard-duration").innerText = isYearly
+        ? "/year"
+        : "/month";
+
+      document.getElementById("premium-price").innerText = isYearly
+        ? "₹2999"
+        : "₹399";
+      document.getElementById("premium-duration").innerText = isYearly
+        ? "/year"
+        : "/month";
+    }
+
+    // FAQ
+    function toggleFAQ(index) {
+      const answer = document.getElementById("faq-answer-" + index);
+      const isExpanded = answer.classList.contains("expanded");
+      const allAnswers = document.querySelectorAll(".faq-answer");
+      const allButtons = document.querySelectorAll(".faq-question");
+
+      allAnswers.forEach((ans, idx) => {
+        ans.classList.remove("expanded");
+        if (index === idx) {
+          ans.classList.toggle("expanded", !isExpanded);
+        }
+      });
+
+      allButtons.forEach((btn, idx) => {
+        const svgIcon = btn.querySelector(".faq-icon");
+        if (index === idx && !isExpanded) {
+          btn.setAttribute("aria-expanded", "true");
+          svgIcon.classList.add("rotate");
+        } else {
+          btn.setAttribute("aria-expanded", "false");
+          svgIcon.classList.remove("rotate");
+        }
+      });
+    }
+
+    // Slider
+    document.addEventListener('DOMContentLoaded', function () {
+      const sliders = document.querySelectorAll('.ms-slider');
+
+      sliders.forEach(slider => {
+        const leftBtn = slider.previousElementSibling.querySelector('.arrow-btn:first-child');
+        const rightBtn = slider.previousElementSibling.querySelector('.arrow-btn:last-child');
+
+        leftBtn.addEventListener('click', function () {
+          slider.scrollBy({
+            left: -slider.offsetWidth,
+            behavior: 'smooth'
+          });
+        });
+
+        rightBtn.addEventListener('click', function () {
+          slider.scrollBy({
+            left: slider.offsetWidth,
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+
+    // Footer
+    fetch("footer.html")
+      .then((response) => response.text())
+      .then((data) => {
+        document.getElementById("footer-container").innerHTML = data;
+      });
+      
+  </script>
+</body>
+
+</html>
