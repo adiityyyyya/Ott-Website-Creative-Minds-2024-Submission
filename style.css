@@ -1602,7 +1602,7 @@ input {
   }
 
   .navbar {
-    padding: 20px 16px;
+    padding: 20px 12px;
     top: 0;
     left: 0;
   }
@@ -1915,8 +1915,8 @@ input {
 
   /* nav */
   .navbar {
-    width: 90%;
-    padding: 20px 16px;
+    width: 93%;
+    padding: 20px 12px;
   }
 
   .nav-toggle {
